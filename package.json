@@ -1,0 +1,26 @@
+{
+  "name": "text_based_dnd_typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tichero/text_based_DnD_typeScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tichero/text_based_DnD_typeScript/issues"
+  },
+  "homepage": "https://github.com/tichero/text_based_DnD_typeScript#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "dotenv": "^16.0.3",
+    "typescript": "^4.9.4"
+  }
+}
