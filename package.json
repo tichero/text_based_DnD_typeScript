@@ -1,29 +1,42 @@
 {
-  "name": "text_based_dnd_typescript",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "build": "tsc"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tichero/text_based_DnD_typeScript.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tichero/text_based_DnD_typeScript/issues"
-  },
-  "homepage": "https://github.com/tichero/text_based_DnD_typeScript#readme",
-  "devDependencies": {
-    "@types/node": "^18.11.18",
-    "dotenv": "^16.0.3",
-    "typescript": "^4.9.4"
-  },
-  "dependencies": {
-    "grammy": "^1.13.1"
-  }
+    "name": "text_based_dnd_typescript",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "build": "rimraf dist && npx tsc",
+        "predev": "npm run build",
+        "dev": "concurrently \"npx tsc -w\"  \"nodemon dist/index.js\""
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tichero/text_based_DnD_typeScript.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tichero/text_based_DnD_typeScript/issues"
+    },
+    "homepage": "https://github.com/tichero/text_based_DnD_typeScript#readme",
+    "devDependencies": {
+        "@types/node": "^18.11.18",
+        "@typescript-eslint/eslint-plugin": "^5.49.0",
+        "concurrently": "^7.6.0",
+        "eslint": "^8.32.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-standard-with-typescript": "^32.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "eslint-plugin-n": "^15.6.1",
+        "eslint-plugin-promise": "^6.1.1",
+        "nodemon": "^2.0.20",
+        "rimraf": "^4.1.2",
+        "typescript": "^4.9.4"
+    },
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "grammy": "^1.13.1",
+        "install": "^0.13.0"
+    }
 }

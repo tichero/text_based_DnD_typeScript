@@ -1,0 +1,8 @@
+{
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.bracketSameLine": true,
+    "prettier.singleAttributePerLine": true,
+    "prettier.tabWidth": 4,
+    "eslint.alwaysShowStatus": true
+}

@@ -1,7 +1,8 @@
-import {Bot} from 'grammy'
-import * as dotenv from 'dotenv'
+import { Bot } from "grammy";
+import * as dotenv from "dotenv";
 
-dotenv.config()
+dotenv.config();
 
-console.log(process.env.TOKEN)
+console.log(process.env.TOKEN);
 
+const name: string = "a";
