@@ -1,8 +1,10 @@
 import { Bot } from "grammy";
 import * as dotenv from "dotenv";
 
-dotenv.config();
+dotenv.config({ path: "src/config.env" });
 
-console.log(process.env.TOKEN);
+const TOKEN: string = process.env.TOKEN || "";
 
-const name: string = "a";
+const bot: Bot = new Bot(TOKEN);
+
+await bot.start();

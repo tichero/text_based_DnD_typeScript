@@ -4,5 +4,6 @@
     "prettier.bracketSameLine": true,
     "prettier.singleAttributePerLine": true,
     "prettier.tabWidth": 4,
-    "eslint.alwaysShowStatus": true
+    "eslint.alwaysShowStatus": true,
+    "workbench.activityBar.iconClickBehavior": "toggle"
 }
