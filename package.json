@@ -7,8 +7,9 @@
     "scripts": {
         "lint": "eslint --ext .tsx,.ts src/",
         "build": "rimraf dist && npx tsc",
-        "predev": "cls && npm run build",
-        "dev": "concurrently \"npx tsc -w\"  \"nodemon dist/index.js\""
+        "predev": "npm run build",
+        "dev": "concurrently \"npx tsc -w\"  \"nodemon dist/index.js\"",
+        "raw": "node dist/index.js"
     },
     "repository": {
         "type": "git",
